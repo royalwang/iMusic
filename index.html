@@ -1,0 +1,64 @@
+
+<!Doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>iMusic</title>
+  <link href="assets/css/iMusic.css" rel="stylesheet">
+</head>
+
+<body onselectstart="return false;" ondblclick="return false;">
+  <div class="container" id="player-main">
+    <div class="list-box">
+      <div class="list-bar">
+        <h4 class="list-bar-title">播放列表</h4>
+        <button class="list-bar-button button-add"></button>
+      </div>
+      <div class="list-scroller" id="list-scroller">
+        <ul class="list" id="player-list">
+        </ul>
+      </div>
+    </div>
+    <div class="player-box">
+      <div class="player-core">
+        <div class="player-body">
+          <audio src="" id="player-audio">
+            您的浏览器不支持HTML5，请升级后再来访问。
+          </audio>
+          <div class="artist-avatar" id="artist-avatar" style="background-image:url(caches/artists/邓紫棋.jpg);">
+            <div class="disc-center"></div>
+          </div>
+          <div class="song-info">
+            <h2 class="song-title" id="player-title">喜欢你</h2>
+            <h4 class="song-meta" id="player-meta">
+              邓紫棋 / 喜欢你
+            </h4>
+          </div>
+          <div class="progress-wrap">
+            <span class="time-current" id="time-current">00:00</span>
+            <span class="time-total" id="time-total">00:00</span>
+            <div class="progress-bar">
+              <div class="progress-bar-indicator"></div>
+            </div>
+          </div>
+        </div>
+        <div class="player-controler">
+          <button class="player-button button-mode mode-shuffle" id="button-mode"></button>
+          <button class="player-button button-prev" id="button-prev"></button>
+          <button class="player-button button-play" id="button-play"></button>
+          <button class="player-button button-next" id="button-next"></button>
+          <button class="player-button button-volumn" id="button-volumn"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="./assets/js/iMusic.js"></script>
+<script type="text/javascript">
+window.onload = function () {
+  var player = new iMusic();
+  // player.autoplay();
+};
+</script>
+</body>
+</html>
