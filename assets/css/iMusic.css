@@ -1,6 +1,16 @@
 /*
- * Styles for TapPlayer V1.0
- * Color Schema: #3498DB
+ * Styles for iMusic V1.0.0
+ *                  ___           ___           ___                       ___
+ *      ___        /\__\         /\__\         /\  \          ___        /\  \
+ *     /\  \      /::|  |       /:/  /        /::\  \        /\  \      /::\  \
+ *     \:\  \    /:|:|  |      /:/  /        /:/\ \  \       \:\  \    /:/\:\  \
+ *     /::\__\  /:/|:|__|__   /:/  /  ___   _\:\~\ \  \      /::\__\  /:/  \:\  \
+ *  __/:/\/__/ /:/ |::::\__\ /:/__/  /\__\ /\ \:\ \ \__\  __/:/\/__/ /:/__/ \:\__\
+ * /\/:/  /    \/__/~~/:/  / \:\  \ /:/  / \:\ \:\ \/__/ /\/:/  /    \:\  \  \/__/
+ * \::/__/           /:/  /   \:\  /:/  /   \:\ \:\__\   \::/__/      \:\  \
+ *  \:\__\          /:/  /     \:\/:/  /     \:\/:/  /    \:\__\       \:\  \
+ *   \/__/         /:/  /       \::/  /       \::/  /      \/__/        \:\__\
+ *                 \/__/         \/__/         \/__/                     \/__/
  */
 
 html,body{
@@ -74,7 +84,7 @@ body{
   padding: 0 0 0 66px;
   font: normal 14px/50px 'Microsoft Yahei';
   color: #999;
-  background: url(../images/bars.png) no-repeat 18px 50%, url(../images/line_gray.png) repeat-y 50px 0;
+  background: url(../images/bars.png) no-repeat 18px 50%, url(../images/line-gray.png) repeat-y 50px 0;
   background-size: 14px 14px, 1px 5px;
 }
 .list-bar-button{
@@ -98,7 +108,7 @@ body{
 .list-scroller{
   position: relative;
   height: calc(100% - 50px);
-  background-image: url(../images/dark_wood.png);
+  background-image: url(../images/dark-wood.png);
   overflow: auto;
 }
 .iScrollVerticalScrollbar{
@@ -114,7 +124,7 @@ body{
 .list{
   height: 100%;
   background-color: #fff;
-  background-image: url(../images/line_gray.png), url(../images/line_gray.png);
+  background-image: url(../images/line-gray.png), url(../images/line-gray.png);
   background-repeat: repeat-y;
   background-position: 50px 0, 350px 0;
   background-size: 1px 5px;
@@ -337,124 +347,3 @@ body{
   background-size: 18px 18px;
 }
 
-
-/**
- *
- * Main stylesheet for Powerange.
- * http://abpetkov.github.io/powerange/
- *
- */
-
-/**
- * Horizontal slider style (default).
- */
-
-.range-bar {
-  top: 100px;
-  background-color: #a9acb1;
-  border-radius: 15px;
-  display: block;
-  height: 4px;
-  position: relative;
-  width: 100%;
-}
-
-.range-quantity {
-  background-color: #017afd;
-  border-radius: 15px;
-  display: block;
-  height: 100%;
-  width: 0;
-}
-
-.range-handle {
-  background-color: #fff;
-  border-radius: 100%;
-  cursor: move;
-  height: 30px;
-  left: 0;
-  top: -13px;
-  position: absolute;
-  width: 30px;
-
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-}
-
-.range-min,
-.range-max {
-  color: #181819;
-  font-size: 12px;
-  height: 20px;
-  padding-top: 4px;
-  position: absolute;
-  text-align: center;
-  top: -9px;
-  width: 24px;
-}
-
-.range-min {
-  left: -30px;
-}
-
-.range-max {
-  right: -30px;
-}
-
-/**
- * Vertical slider style.
- */
-
-.vertical {
-  height: 100%;
-  width: 4px;
-}
-
-.vertical .range-quantity {
-  bottom: 0;
-  height: 0;
-  position: absolute;
-  width: 100%;
-}
-
-.vertical .range-handle {
-  bottom: 0;
-  left: -13px;
-  top: auto;
-}
-
-.vertical .range-min,
-.vertical .range-max {
-  left: -10px;
-  right: auto;
-  top: auto;
-}
-
-.vertical .range-min {
-  bottom: -30px;
-}
-
-.vertical .range-max {
-  top: -30px;
-}
-
-/**
- * Style for disabling text selection on handle move.
- */
-
-.unselectable {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/**
- * Style for handle cursor on disabled slider.
- */
-
-.range-disabled {
-  cursor: default;
-}
